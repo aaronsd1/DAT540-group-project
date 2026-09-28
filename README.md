@@ -32,6 +32,80 @@ When your work is finished, you create a **Pull Request (PR)** asking for your b
 
 ---
 
+## Prerequisites
+
+Before cloning the project, you need a few things set up on your computer.
+
+### 1. A GitHub account
+
+You need a GitHub account and access to the group repository.
+
+If the repository is private, make sure you have accepted the repository invitation before continuing.
+
+### 2. Git
+
+You need to have **Git installed** on your computer.
+
+You can check if Git is already installed by opening a terminal and running:
+
+```bash
+git --version
+```
+
+If you get something similar to:
+
+```text
+git version 2.51.0
+```
+
+then Git is installed and you are good to go.
+
+If the command is not recognized, install Git from:
+
+https://git-scm.com/downloads
+
+After installing Git, close and reopen your terminal and run `git --version` again to verify that it works.
+
+### 3. Configure your Git identity
+
+The first time you use Git, you should tell it your name and email address. Git uses this information to identify who created each commit.
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+Ideally, use an email address associated with your GitHub account so GitHub can correctly associate your commits with your account.
+
+You can verify the configuration with:
+
+```bash
+git config --global user.name
+git config --global user.email
+```
+
+### 4. GitHub authentication
+
+We will clone the repository using **HTTPS**, so you do **not** need to configure SSH keys.
+
+For example:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/DAT540-group-project.git
+```
+
+For a public repository, cloning does not require authentication.
+
+For a private repository, you must have access to the repository. Git/GitHub may ask you to authenticate when cloning, pulling, or pushing.
+
+**Important:** GitHub does not accept your normal GitHub account password for Git operations over HTTPS. Depending on your setup, Git may open a browser and ask you to sign in to GitHub. Follow the authentication instructions it gives you.
+
+Once the authentication is completed, your credentials will normally be remembered by your system, so you should not have to sign in every time.
+
+---
+
+Once all of the above is working, you are ready to clone the repository.
+
 ## Initial setup
 
 You only need to do this once.
